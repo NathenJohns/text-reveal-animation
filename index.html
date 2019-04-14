@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Baffle Text Reveal</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="data">.team studios</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+    <script type="text/javascript">
+      const text = baffle(".data");
+      text.set({
+        characters:
+          "iv)e!rk;ni?v<>nf:ngmfuzu@@:gorm[]ri--s;tjznfp eud,czu(tdps",
+        speed: 120
+      });
+      text.start();
+      text.reveal(4000);
+    </script>
+  </body>
+</html>
